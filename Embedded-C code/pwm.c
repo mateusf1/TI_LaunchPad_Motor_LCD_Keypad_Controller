@@ -21,7 +21,7 @@ void pwm_init(void){
     PM5CTL0 &= ~LOCKLPM5;
 
     //-- Setup Timer3_B CCR ---------------------------------------------
-    TB3CCR0 = 600;                      // PWM Period ~18.3ms or FSreq 54.6Hz
+    TB3CCR0 = 600;                      // PWM Period ~18.3ms or Freq 54.6Hz
     TB3CCTL2 = OUTMOD_7;                // CCR2 reset/set
     TB3CCR2 = 0;                        // CCR2 PWM duty cycle
 
@@ -32,4 +32,5 @@ void pwm_init(void){
 void set_duty_cycle(unsigned short duty_cycle){
     TB3CCR2 = 6*duty_cycle;
 }
+
 
