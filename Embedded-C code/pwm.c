@@ -2,6 +2,8 @@
  * pwm.c
  *
  * Set-up/init and generates PWM signal for DC Motor
+ *
+ * By: Mateus A. Fernandes A. (GitHum: mateusf1)
  */
 
 #include <msp430.h>
@@ -30,3 +32,4 @@ void pwm_init(void){
 void set_duty_cycle(unsigned short duty_cycle){
     TB3CCR2 = 6*duty_cycle;
 }
+
