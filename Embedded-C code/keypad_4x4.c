@@ -2,6 +2,8 @@
  * keypad_4x4.c
  *
  * Init and read 4x4 keypad inputs
+ *
+ * By: Mateus A. Fernandes A. (GitHum: mateusf1)
  */
 
 #include <msp430.h>
@@ -61,4 +63,5 @@ unsigned char get_key(void){
     }
     return 0;  // Error or key not presses
  }
+
 
