@@ -2,6 +2,8 @@
  * keypad_4x4.h
  *
  * Init and read 4x4 keypad inputs
+ *
+ * By: Mateus A. Fernandes A. (GitHum: mateusf1)
  */
 
 #ifndef KEYPAD_4X4_H_
@@ -16,3 +18,4 @@ void keypad_init(void);
 unsigned char get_key(void);
 
 #endif /* KEYPAD_4X4_H_ */
+
