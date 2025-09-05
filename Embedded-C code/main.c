@@ -1,4 +1,10 @@
-// By: Mateus A. Fernandes A.
+/*
+ * main.c
+ *
+ * Control DC Motor speeds (%) by a 4x4 Keypad input. Display such speed on an LCD.
+ *
+ * By: Mateus A. Fernandes A. (GitHum: mateusf1)
+ */
 
 #include <msp430.h>
 #include <stdio.h>
@@ -78,4 +84,5 @@ void reset_LCD(void){
     LCD_Write("Speed: 0  %");
     LCD_SetCursor(7, 0);    // Set cursor to position (7,0)
 }
+
 
