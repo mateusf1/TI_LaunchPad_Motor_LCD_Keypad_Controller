@@ -1,3 +1,5 @@
+// By: Mateus A. Fernandes A.
+
 #include <msp430.h>
 #include <stdio.h>
 #include "LiquidCrystal_I2C.h"
@@ -76,3 +78,4 @@ void reset_LCD(void){
     LCD_Write("Speed: 0  %");
     LCD_SetCursor(7, 0);    // Set cursor to position (7,0)
 }
+
